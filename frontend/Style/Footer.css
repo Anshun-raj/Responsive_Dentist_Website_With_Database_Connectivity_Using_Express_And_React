@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: rgb(93, 93, 93);
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer h2 {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .footer h2 {
+    font-size: 20px;
+  }
+}

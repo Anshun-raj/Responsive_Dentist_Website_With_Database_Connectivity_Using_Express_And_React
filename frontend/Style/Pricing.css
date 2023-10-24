@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.pricing {
+  min-height: 85vh;
+  padding: 20px;
+}
+
+.pricing h1 {
+  text-align: center;
+  font-size: 44px;
+  padding: 10px 0;
+}
+
+.pricing .pricingData {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pricing .pricingData .pricingDataCard {
+  width: 350px;
+  height: 380px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 30px;
+  border: 2px solid rgb(98, 97, 97);
+}
+
+.pricing .pricingData .pricingDataCard h3 {
+  font-size: 30px;
+  padding: 5px 0;
+  font-weight: bold;
+  color: rgb(61, 61, 233);
+}
+
+.pricing .pricingData .pricingDataCard h2 {
+  font-size: 36px;
+  padding: 5px 0;
+}
+
+.pricing .pricingData .pricingDataCard span {
+  font-size: 56px;
+  color: red;
+}
+
+.pricing .pricingData .pricingDataCard .facilities {
+  padding: 10px 0;
+  display: block;
+}
+
+.pricing .pricingData .pricingDataCard .facilities h5 {
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.pricing .pricingData .pricingDataCard .btn4 {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  background-color: rgb(61, 61, 233);
+  color: #fff;
+  border-radius: 2px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.pricing .pricingData .pricingDataCard .btn4:hover {
+  background-color: rgb(37, 36, 36);
+}
+
+@media (max-width: 768px) {
+  .pricing .pricingData {
+    flex-direction: column;
+  }
+}
