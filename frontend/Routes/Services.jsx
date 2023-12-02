@@ -69,7 +69,10 @@ function Counter() {
   return (
     <div>
       <h2>
-        {count >= 1 ? "Booked" : "Book Now"}:{count}
+        {count >= 1 ? "Booked" : "Book Now"}:
+        {
+          count>0?count:'0'
+        }
       </h2>
       <button onClick={() => setCount(count + 1)} className="btn2">
         +
