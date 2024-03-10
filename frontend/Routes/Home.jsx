@@ -5,6 +5,10 @@ function Home() {
   useLayoutEffect(() => {
     console.log("State changed");
   }, [setIsAppoin]);
+  function alertMsg()
+  {
+    alert("Your Appointment has been fixed");
+  }
 
   return (
     <div className="home">
@@ -16,7 +20,7 @@ function Home() {
           Quisquam Est? Dolorem Fugiat Fugit Amet Dolores Provident Velit Eos
           Est.
         </p>
-        <button className="btn" onClick={() => setIsAppoin(!isAppoin)}>
+        <button className="btn" onDoubleClick={alertMsg} onClick={() => setIsAppoin(!isAppoin)}>
           {isAppoin ? "Appoinment Done!" : "Make Appoinment"}
         </button>
       </div>
